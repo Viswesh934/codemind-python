@@ -1,5 +1,3 @@
-# Python3 program to find next palindromic
-# prime for a given number.
 import math as mt
 
 def isPrime(num):
@@ -25,3 +23,19 @@ n=int(input())
 print(primePalindrome(n))
 
     
+    
+
+
+
+
+
+	    
+
+
+
+
+  
+
+
+
+
