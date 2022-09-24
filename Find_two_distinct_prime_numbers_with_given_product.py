@@ -1,23 +1,20 @@
-def prime(n):
-    if n>1:
-        for i in range(2,int(n**0.5)+1):
-            if(n%i==0):
-                return False
-        else:
-            return True
-t=int(input())
-lis=[]
-p=[]
-for l in range(t):
-    if(prime(t-l)):
-        lis.append(t-l)
-for i in lis:
-    for j in range(len(lis)):
-        if i*lis[j]==t:
-            p.append(i)
-            print(lis[j],end=" ")
-if p==[]:
+def isprime(n):
+    for i in range(2,n//2):
+        if n%i==0:
+            return False
+            break
+    else:
+        return True
+n=int(input())
+t=0
+for i in range(2,n):
+    for j in range(2,n):
+        if (isprime(i) and isprime(j)):
+            r=i*j
+            if r==n and i<j:
+                print(i,j)
+                t=1
+                break
+if t==0:
     print(-1)
-            
-
         
